@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .face {
+      width: 300px;
+      height: 300px;
+      background: #000;
+      border-radius: 50%;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .face::before {
+      content: '';
+      width: 65px;
+      height: 65px;
+      background: red;
+      border-radius: 50%;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transform: translateX(-25%);
+    }
+
+    .face::after {
+      content: '';
+      width: 65px;
+      height: 65px;
+      background: red;
+      border-radius: 50%;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transform: translateX(25%);
+    }
+
+    .nose {
+      width: 130px;
+      height: 80px;
+      border-radius: 50%;
+      background: #fff;
+
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transform: translateY(-25%);
+    }
+
+    .nose::before {
+      content: '';
+      width: 30px;
+      height: 20px;
+      border-radius: 50%;
+      background: #000;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 10%;
+      margin: auto;
+    }
+
+    .nose::after {
+      content: '';
+      width: 75px;
+      height: 25px;
+      border-radius: 50%;
+      background: #000;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      margin: auto;
+    }
+
+    .eye {
+      height: 55px;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 25%;
+    }
+
+    .eyel {
+      width: 55px;
+      height: 55px;
+      background: #fff;
+      border-radius: 50%;
+
+      position: absolute;
+      left: 25%;
+      transform: translateX(-25%);
+    }
+
+    .eyel::before {
+      content: '';
+      width: 40px;
+      height: 40px;
+      background: #000;
+      border-radius: 50%;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .eyer {
+      width: 55px;
+      height: 55px;
+      background: #fff;
+      border-radius: 50%;
+
+      position: absolute;
+      right: 25%;
+      transform: translateX(25%);
+    }
+
+    .eyer::before {
+      content: '';
+      width: 40px;
+      height: 40px;
+      background: #000;
+      border-radius: 50%;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .ear {
+      height: 40px;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+
+    .earl {
+      width: 45px;
+      height: 45px;
+      background: #000;
+      border-radius: 50%;
+
+      position: absolute;
+      left: 10%;
+    }
+
+    .earl::before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      background: #fff;
+      border-radius: 50%;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .earr {
+      width: 45px;
+      height: 45px;
+      background: #000;
+      border-radius: 50%;
+
+      position: absolute;
+      right: 10%;
+    }
+
+    .earr::before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      background: #fff;
+      border-radius: 50%;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .mouth {
+      height: 30px;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 75%;
+      transform: translateY(25%);
+    }
+
+    .mouth::before {
+      content: '';
+      width: 25px;
+      height: 30px;
+      background: #fff;
+
+      position: absolute;
+      right: 50%;
+      transform: skew(45deg) translateX(-25%);
+    }
+
+    .mouth::after {
+      content: '';
+      width: 25px;
+      height: 30px;
+      background: #fff;
+
+      position: absolute;
+      left: 50%;
+      transform: skew(315deg) translateX(25%);
+    }
+  </style>
+</head>
+<body>
+  <div class="face">
+    <div class="nose"></div>
+    <div class="eye">
+      <div class="eyel"></div>
+      <div class="eyer"></div>
+    </div>
+    <div class="ear">
+      <div class="earl"></div>
+      <div class="earr"></div>
+    </div>
+    <div class="mouth"></div>
+  </div>
+</body>
+</html>
